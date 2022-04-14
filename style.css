@@ -23,3 +23,16 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+dl {
+  display: flex;
+  flex-flow: row wrap;
+}
+dt {
+  font-weight:bold;
+  flex-basis: 20%;
+  padding: 2px 4px;
+}
+dd:after {
+  text-content: "<br>"
+}
