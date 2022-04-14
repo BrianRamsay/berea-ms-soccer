@@ -25,14 +25,20 @@ video {
 }
 
 dl {
-  display: flex;
-  flex-flow: row wrap;
+
 }
 dt {
   font-weight:bold;
-  flex-basis: 20%;
-  padding: 2px 4px;
+  float:left;
+  clear:left;
+  padding: 2px 4px;  
+
 }
-dd:after {
-  text-content: "<br>"
+dt::after {
+  content: ": "
+}
+dd {
+  float:left;
+  margin: 0;
+  padding: 2px 4px;  
 }
