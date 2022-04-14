@@ -1,5 +1,5 @@
 /* https://codepen.io/giana/pen/OrpdLK */
-// Classes set via JS
+/* Classes set via JS */
 $accordionClass: '.collapse-init';
 $panelClass: '.panel-active';
 $contentsClass: 'summary + *';
