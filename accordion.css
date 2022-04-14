@@ -1,0 +1,106 @@
+<div class="container collapse">
+  <details>
+    <summary>Accordion 1</summary>
+    <div class="details-wrapper">
+      <div class="details-styling">        
+        Details 1
+      </div>
+    </div>
+  </details>
+  <details>
+    <summary>Accordion 2</summary>
+    <div class="details-wrapper">
+      <div class="details-styling">        
+        Details 2
+      </div>
+    </div>
+  </details>
+  <details>
+    <summary>Accordion 3</summary>
+    <div class="details-wrapper">
+      <div class="details-styling">        
+        Details 3
+      </div>
+    </div>
+  </details>
+</div>
+The necessary CSS & CSS3 styles for the accordion.
+
+/*
+  Please wrap your collapsible content in a single element or so help me
+  Must add a transition or it breaks because that's the whole purpose of this
+  Only one transition-duration works (see explanation on line #141 in JS)
+  You can add more to an inner wrapper (.details-styling)
+*/
+.collapse-init summary + * {
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+}
+/*
+  Closed state. Any CSS transitions work here
+  The JS has a height calculation to make sliding opened/closed easier, but it's not necessary
+  Remove the height prop for a simple toggle on/off (after all that work I did for you?)
+*/
+.collapse-init :not(.panel-active) summary + * {
+  height: 0;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+.collapse-init summary {
+  list-style: none;
+}
+.collapse-init summary::-webkit-details-marker {
+  display: none;
+}
+.collapse-init summary::before {
+  display: none;
+}
+.collapse-init summary {
+  cursor: pointer;
+}
+etails {
+  background: #fff;
+  border: 1px solid #d6d1e0;
+  border-bottom: 0;
+  list-style: none;
+}
+details:first-child {
+  border-radius: 6px 6px 0 0;
+}
+details:last-child {
+  border-bottom: 1px solid #d6d1e0;
+  border-radius: 0 0 6px 6px;
+}
+summary {
+  display: block;
+  transition: 0.2s;
+  font-weight: 700;
+  padding: 1em;
+}
+summary:focus {
+  outline: 2px solid #5b13ec;
+}
+.collapse-init summary::after {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  content: '';
+  float: right;
+  width: 0.5em;
+  height: 0.5em;
+  margin-top: 0.25em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  transition: inherit;
+}
+[open] summary {
+  background: #5b13ec;
+  color: #f8f5fe;
+}
+[open] summary::after {
+  margin-top: 0.5em;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
