@@ -16,6 +16,8 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   max-width:800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* images and videos max out at full width */
@@ -25,9 +27,6 @@ video {
   max-width: 100%;
 }
 
-dl {
-
-}
 dt {
   font-weight:bold;
   float:left;
@@ -42,4 +41,8 @@ dd {
   float:left;
   margin: 0;
   padding: 2px 4px;  
+}
+
+p {
+  margin: 10px;
 }
