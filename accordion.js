@@ -211,7 +211,7 @@ class Collapse {
 }
 
 let makeMePretty = document.querySelector(".collapse");
-let accordion = new Collapse(makeMePretty, { accordion: true }).init();
+let accordion = new Collapse(makeMePretty, { accordion: false }).init();
 
 
 // hoisthoistupwego I'm stuck on a machine with IE11
