@@ -11,19 +11,29 @@
     <link rel="stylesheet" href="/accordion.css" />
     <script src="https://cdn.jsdelivr.net/gh/javan/details-element-polyfill@master/dist/details-element-polyfill.js"></script>
     <script src="/accordion.js" defer></script>
+    <script src="/fields.js" defer></script>
 
   </head>
   <body>
     <h1>Field Directions</h1>
-    <h3>Our Fields</h3>
-    <ul>
-      <li><h4>Skate Park</h4></li>
-      <li><h4>Car Rider Loop</h4></li>
-      <li><h4>City Park aka MUSA Fields</h4></li>
-    </ul>
+    <h2>Our Fields</h2>
+    <div class="ours container collapse">
+      <details>
+        <summary>Skate Park</summary>
+        <div  class="details-wrapper"></div>
+      </details>   
+      <details>
+        <summary>Front of School aka Car Rider Loop</summary>
+        <div  class="details-wrapper"></div>
+      </details>
+      <details>
+        <summary>City Park aka MUSA Fields</summary>
+        <div  class="details-wrapper"></div>
+      </details>
+    </div>
     
-    <h3>Their Fields</h3>
-    <div class="container collapse">
+    <h2>Their Fields</h2>
+    <div class="theirs container collapse">
       <details>
         <summary>Caudill Middle</summary>
         <p class="details-wrapper">Played at Madison Middle.</p>

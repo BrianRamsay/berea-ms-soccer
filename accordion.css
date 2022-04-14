@@ -30,16 +30,7 @@
 	 background: #fbcb6a;
 	 color: #4d4433;
 }
- html {
-	 background: #f8f5fe;
-	 color: #3c334d;
-}
- body {
-	 font: 0.7142857143em 'Quicksand', sans-serif;
-	 margin: 0 auto;
-	 max-width: 960px;
-	 padding: 5vw;
-}
+
  h1 {
 	 font-size: 2em;
 	 margin-bottom: 1em;
