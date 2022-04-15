@@ -27,7 +27,8 @@ video {
   max-width: 100%;
 }
 
-/* My additions */
+
+/************* My additions ************/
 
 dt {
   font-weight:bold;
@@ -47,6 +48,11 @@ dd {
 
 p {
   padding: 10px 10px 10px 10px;
+	margin-top: 10px;
+	margin-bottom: 1em;
+}
+ p:last-child {
+	 margin-bottom: 0;
 }
 
 br {
@@ -65,17 +71,8 @@ h1 {
   font-size: 1.3em;
 }
 
+
 /* From https://forum.squarespace.com/topic/29657-how-to-embed-a-google-calendar-in-a-responsive-way/ */
-@media (max-width: 650px) {
-   .big-container {
-       display: none;
-   }
-}
-@media (min-width: 650px) {
-   .small-container {
-       display: none;
-   }
-}
 /* Responsive iFrame */
 .responsive-iframe-container {
    position: relative;
@@ -135,4 +132,25 @@ h1 {
 .navbar a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+/******* Media Queries *******/
+@media (max-width: 650px) {
+   .big-container {
+       display: none;
+   }
+}
+@media (min-width: 650px) {
+   .small-container {
+       display: none;
+   }
+}
+/******* Media Queries *******/
+@media (max-width: 450px) {
+  .navbar li {
+    display:block;
+  }
+   .navbar {
+    display:block;
+  }
 }
