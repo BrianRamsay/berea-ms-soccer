@@ -48,7 +48,6 @@ dd {
 }
 
 p {
-  padding: 10px 10px 10px 10px;
 	margin-top: 10px;
 	margin-bottom: 1em;
 }
@@ -78,8 +77,12 @@ h1 {
 
 .dates td:first-child {
   font-weight: bold;
+  padding-right:10px;
 }
 
+.details-wrapper {
+    padding: 10px 10px 10px 10px;
+}
 
 /* From https://forum.squarespace.com/topic/29657-how-to-embed-a-google-calendar-in-a-responsive-way/ */
 /* Responsive iFrame */
