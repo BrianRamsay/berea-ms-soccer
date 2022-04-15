@@ -104,20 +104,19 @@ h1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: flex;
   background: #eee;
-}
-.navbar ul:after {
-  content: '';
-  display:block;
-  clear: both;
 }
 
 .navbar li {
   text-align: center;
-  display:inline;
-  padding:0;
-  margin: 0;
+  padding-left:0px;
+  border: 1px solid #aaa;
+  border-right: 0px;
+
+}
+.navbar ul:last-child {
+  border-right: 1px solid #aaa;
 }
 
 .navbar li a {
