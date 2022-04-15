@@ -85,13 +85,14 @@ h1 {
 }
 
 address a {
-  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
 }
 address img {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   display:inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 /* From https://forum.squarespace.com/topic/29657-how-to-embed-a-google-calendar-in-a-responsive-way/ */
