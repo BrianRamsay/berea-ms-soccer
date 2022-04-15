@@ -55,7 +55,7 @@
 	 padding: 1em;
 }
  summary:focus {
-	 outline: 2px solid #5b13ec;
+	 outline: 2px solid #ffcc22;
 }
  .collapse-init summary::after {
 	 border-right: 2px solid;
@@ -69,8 +69,8 @@
 	 transition: inherit;
 }
  [open] summary {
-	 background: #5b13ec;
-	 color: #f8f5fe;
+	 background: #ffcc22;
+	 color: #black;
 }
  [open] summary::after {
 	 margin-top: 0.5em;

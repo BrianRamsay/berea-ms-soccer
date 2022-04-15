@@ -135,8 +135,8 @@ h1 {
 }
 
 .navbar a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #ffcc22;
+  color: black;
 }
 
 /******* Media Queries *******/
