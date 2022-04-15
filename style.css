@@ -27,6 +27,8 @@ video {
   max-width: 100%;
 }
 
+/* My additions */
+
 dt {
   font-weight:bold;
   float:left;
@@ -52,6 +54,15 @@ br {
 }
 h1 {
   text-align:center;
+}
+
+.calendar-note {
+  float:right;
+  margin-top:-30px;
+  color: #333;
+}
+.calendar-note .large {
+  font-size: 1.3em;
 }
 
 /* From https://forum.squarespace.com/topic/29657-how-to-embed-a-google-calendar-in-a-responsive-way/ */
