@@ -76,6 +76,10 @@ h1 {
   font-size: 1.3em;
 }
 
+.dates td:first-child {
+  font-weight: bold;
+}
+
 
 /* From https://forum.squarespace.com/topic/29657-how-to-embed-a-google-calendar-in-a-responsive-way/ */
 /* Responsive iFrame */
