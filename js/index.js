@@ -1,1 +1,1 @@
-let accordion = new Collapse(document.querySelector(".teams.collapse"), { accordion: false }).init();
+let accordion = new Collapse(document.querySelector(".teams.collapse"), { accordion: true }).init();
