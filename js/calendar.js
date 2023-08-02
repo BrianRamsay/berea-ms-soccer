@@ -2,9 +2,9 @@
     to your site with Javascript */
 
 //console.log("Hello, world!");
-$('document').on("ready", function(){
-    $('#id').addClass('flash');
-    setTimeout(function() {
-          $('#id').removeClass('flash');
-    }, 500);
+document.addEventListener("ready", function(){
+
+  document.getElementById("calendar-switcher").addEventListener('change',function() {
+    console.log("test");
+  });
 });

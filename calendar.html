@@ -34,17 +34,26 @@
       <!-- Calendar -->
       <br>
       <h3>
-        Soccer Calendar
+        Soccer Calendars
       </h3>
+      <select id="calendar-switcher">
+        <option value="girls-cal">Middle School Girls</option>
+        <option value="girls-cal">Middle School Boys</option>
+      </select>
       <!-- <span id="calendar-note">Choose Team<span class="large"> &#9759;</span>-->
 
-      <div class="responsive-iframe-container big-container">
+      <div class="responsive-iframe-container big-container girls-cal">
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showCalendars=0&showTz=1&src=ajBsY2w1bWx2YzlyZHNvaXVlYTVraHRraHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
-      <div class="responsive-iframe-container small-container">
+      <div class="responsive-iframe-container small-container girls-cal">
         <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showCalendars=0&showTz=1&showNav=0&mode=AGENDA&showTabs=0&src=ajBsY2w1bWx2YzlyZHNvaXVlYTVraHRraHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%230B8043" style="border:solid 1px #777" width="800" height="800" frameborder="0" scrolling="no"></iframe>
       </div>
 
+      <div class="responsive-iframe-container big-container boys-cal" style="display:none">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=aWE5YnZ2NWg1YW91MWNmNzI0MHIwbXUycDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="responsive-iframe-container small-container boys-cal" style="display:none">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&showNav=0&showTabs=0&src=aWE5YnZ2NWg1YW91MWNmNzI0MHIwbXUycDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5" style="border:solid 1px #777" width="800" height="800" frameborder="0" scrolling="no"></iframe>      </div>
     </div>
   </body>
 </html>
