@@ -1,9 +1,6 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+/* Once the switcher is used, the media queries no longer work. hmm. */
 
-//console.log("Hello, world!");
 document.addEventListener("DOMContentLoaded", function(){
-
   document.getElementById("calendar-switcher").addEventListener('change',function() {
     new_class = this.options[this.selectedIndex].value;
     

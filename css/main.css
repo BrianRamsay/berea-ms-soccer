@@ -160,7 +160,7 @@ address img {
 /******* Media Queries *******/
 @media (max-width: 650px) {
    .big-container {
-       display: none;
+       display: none;!important
    }
   .responsive-iframe-container {
     overflow:visible;
@@ -172,7 +172,7 @@ address img {
 }
 @media (min-width: 650px) {
    .small-container {
-       display: none;
+       display: none;!important
    }
 }
 @media (max-width: 550px) {
