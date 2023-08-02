@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // show desired
     calendars = document.querySelectorAll(`.${new_class}`);
-    calendars.forEach((cal) => cal.style.display = 'block');
+    calendars.forEach(function(cal) {
+      const width = window.innerWidth;
+      const is_big = cal.classList.contains('big-container');
+      var display = (is_big) ? 'block' : 'none'
+      if(width < 650) {
+          display = (is_big) ? 'none' : 'block'
+      }
+      cal.style.display = display;
+    });
   });
 });
