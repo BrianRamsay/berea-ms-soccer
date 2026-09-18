@@ -158,9 +158,12 @@ address img {
 }
 
 /******* Media Queries *******/
-@media (max-width: 650px) {
+@media (max-width: 550px) {
    .big-container {
        display: none;!important
+   }
+   .small-container {
+       display: block;!important
    }
   .responsive-iframe-container {
     overflow:visible;
@@ -170,7 +173,10 @@ address img {
   }
 
 }
-@media (min-width: 650px) {
+@media (min-width: 550px) {
+   .big-container {
+       display: block;!important
+   }
    .small-container {
        display: none;!important
    }
