@@ -180,3 +180,8 @@ address img {
     display:block;
   }
 }
+
+/**************** Application CSS *****************/
+.details-wrapper img {
+    width: 400px;
+}
