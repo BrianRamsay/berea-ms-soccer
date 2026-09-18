@@ -182,6 +182,6 @@ address img {
 }
 
 /**************** Application CSS *****************/
-.details-wrapper img {
+.details-wrapper img.map {
     width: 400px;
 }
